@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "full-stack-developer-test",
+  "description": "This test is for a career position at BlueWinds and will test your back-end skills.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABIDULLAH786/full-stack-developer-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABIDULLAH786/full-stack-developer-test/issues"
+  },
+  "homepage": "https://github.com/ABIDULLAH786/full-stack-developer-test#readme"
+}
