@@ -8,8 +8,5 @@ const router = express.Router();
  */
 
 router.route("/load_categories").get(authentication, getAllCategories);
-/**
- * Thit is route is for populating categories documents in database
- */
-router.route("/categories/new").post(newCategory);
+
 module.exports = router;

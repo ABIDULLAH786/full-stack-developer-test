@@ -4,11 +4,10 @@ const connectDatabase = () => {
     mongoose.connect(process.env.DB_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        // useCreateIndex:true
     }).then(con => {
         console.log(`server is connected on ${con.connection.host} `);
     }).catch((error) => {
-        res.status(502).json({ error })
+        console.log(error)
     })
 }
 module.exports = connectDatabase;
