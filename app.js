@@ -1,12 +1,21 @@
 const express = require('express')
-// const cors = require('cors')
 const app = new express()
+
+/**
+ * To allow accessing body data
+ */
 app.use(express.json())
-// app.use(cors())
 
-
+/**
+ * This is routes for users
+ */
 const UserRouter = require("./routes/userRoutes")
 app.use("/users", UserRouter);
+
+/**
+ * This is routes for categories
+ */
+app.use(require("./routes/categoriesRoutes"));
 
 
 module.exports = app;
