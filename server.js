@@ -9,5 +9,5 @@ connectDatabse();
 
 const port = process.env.PORT || 3333
 const server = app.listen(port, () => {
-    console.log(`Server is listening to port ${port}`);
+    console.log(`Server is listening to port localhost:${port}`);
 })
